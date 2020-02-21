@@ -1,9 +1,11 @@
+### MÀN 1: MÀN HÌNH CHÍNH
 <img src = "./X - 1.jpg" width="600">
 <img src = "./X - 2.jpg" width="600">
 <img src = "./X - 3.jpg" width="600">
 <img src = "./X - 4.jpg" width="600">
 <img src = "./X - 5.jpg" width="600">
 <img src = "./X - 6.jpg" width="600">
+
 <img src = "./X - 7.jpg" width="600">
 <img src = "./X - 8.jpg" width="600">
 <img src = "./X - 9.jpg" width="600">
