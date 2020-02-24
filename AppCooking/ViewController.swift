@@ -27,9 +27,12 @@ class ViewController: UIViewController {
     let Lable : UILabel = {
         let lable = UILabel ()
         lable.translatesAutoresizingMaskIntoConstraints = false
+        //lable.font = UIFont(name: "MaShanZheng-Regular", size: 20)
+
         lable.text = "Cooking"
+        
         lable.textColor = #colorLiteral(red: 0.8941176471, green: 0.5529411765, blue: 0.03921568627, alpha: 1)
-        lable.font = UIFont.systemFont(ofSize: 48)
+       lable.font = UIFont.systemFont(ofSize: 48)
         return lable
     }()
     let Lable2 : UILabel = {
@@ -66,6 +69,7 @@ class ViewController: UIViewController {
     let loginButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .red
         button.layer.cornerRadius = 6
         button.setTitle("Tiếp Tục >>", for: .normal)
         button.setTitleColor(#colorLiteral(red: 1, green: 0.5728448231, blue: 0.275055199, alpha: 1), for: .normal)
@@ -76,6 +80,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setuplayout()
+        loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
         
     }
     
@@ -124,9 +129,18 @@ class ViewController: UIViewController {
         loginButton.leadingAnchor.constraint(equalTo: Viewbig.leadingAnchor, constant: 70).isActive = true
         loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         loginButton.widthAnchor.constraint(equalToConstant: 300).isActive = true
-        
+    
+    }
+    @objc func login(){
+    let MainVc = Main2ViewConTroller()
+    let navigation = UINavigationController(rootViewController: MainVc)
+        navigation.modalPresentationStyle = .fullScreen
+        //navigation.isNavigationBarHidden = true
+        present(navigation, animated: true, completion: nil)
         
     }
+    
+    
     
 }
 
