@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let Viewbig: UIView = {
-        let view = UIView()
-        let image = UIImageView(image: UIImage(named: "anh1"))
-        view.addSubview(image)
-        image.contentMode = .right
-        return view
-    }()
+    //let Viewbig: UIView = {
+      //  let view = UIView()
+        //let image = UIImageView(image: UIImage(named: "anh1"))
+        //view.addSubview(image)
+        //image.contentMode = .right
+        //return view
+    //}()
     let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -78,66 +78,70 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "anh1")!)
+
         setuplayout()
         loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
-        
     }
     
     func setuplayout() {
-        view.addSubview(Viewbig)
-        Viewbig.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive =  true
-        Viewbig.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        Viewbig.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        Viewbig.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+        //view.addSubview(Viewbig)
+        //Viewbig.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive =  true
+        //Viewbig.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        //Viewbig.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+       // Viewbig.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         
         // imageview
-        Viewbig.addSubview(imageView)
+        view.addSubview(imageView)
         //imageView.backgroundColor = .red
-        imageView.topAnchor.constraint(equalTo: Viewbig.topAnchor, constant: 68).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: Viewbig.leadingAnchor, constant: 135).isActive = true
+        imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 68).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 135).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 125).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 146).isActive = true
         
-        Viewbig.addSubview(Lable)
+        view.addSubview(Lable)
         Lable.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 30).isActive = true
-        Lable.leadingAnchor.constraint(equalTo: Viewbig.leadingAnchor, constant: 125).isActive = true
+        Lable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 125).isActive = true
         Lable.heightAnchor.constraint(equalToConstant: 102).isActive = true
         Lable.widthAnchor.constraint(equalToConstant: 300).isActive = true
         
-        Viewbig.addSubview(Lable2)
+        view.addSubview(Lable2)
+        
         Lable2.topAnchor.constraint(equalTo: Lable.bottomAnchor, constant: 40).isActive = true
-        Lable2.leadingAnchor.constraint(equalTo: Viewbig.leadingAnchor, constant: 120).isActive = true
+        Lable2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 120).isActive = true
         Lable2.heightAnchor.constraint(equalToConstant: 30).isActive = true
         Lable2.widthAnchor.constraint(equalToConstant: 300).isActive = true
         
-        Viewbig.addSubview(Lable3)
+        view.addSubview(Lable3)
   
         Lable3.topAnchor.constraint(equalTo: Lable2.bottomAnchor, constant: 25).isActive = true
-        Lable3.leadingAnchor.constraint(equalTo: Viewbig.leadingAnchor, constant: 70).isActive = true
+        Lable3.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70).isActive = true
         Lable3.heightAnchor.constraint(equalToConstant: 40).isActive = true
         Lable3.widthAnchor.constraint(equalToConstant: 300).isActive = true
         
-        Viewbig.addSubview(Lable4)
+        view.addSubview(Lable4)
         Lable4.topAnchor.constraint(equalTo: Lable3.bottomAnchor, constant: 20).isActive = true
-        Lable4.leadingAnchor.constraint(equalTo: Viewbig.leadingAnchor, constant: 70).isActive = true
+        Lable4.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70).isActive = true
         Lable4.heightAnchor.constraint(equalToConstant: 40).isActive = true
         Lable4.widthAnchor.constraint(equalToConstant: 300).isActive = true
         
-        Viewbig.addSubview(loginButton)
+        view.addSubview(loginButton)
         loginButton.topAnchor.constraint(equalTo: Lable4.bottomAnchor, constant: 200).isActive = true
-        loginButton.leadingAnchor.constraint(equalTo: Viewbig.leadingAnchor, constant: 70).isActive = true
-        loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70).isActive = true
+        //loginButton.bottomAnchor.constraint(equalTo: Viewbig.bottomAnchor, constant: 300).isActive = true
+    loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         loginButton.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        //loginButton.trailingAnchor.constraint(equalTo: Viewbig.trailingAnchor, constant: -100).isActive = true
+       // loginButton.bottomAnchor.constraint(equalTo: Viewbig.bottomAnchor, constant: 30).isActive = true
     
+        
+        
     }
     @objc func login(){
-    let MainVc = Main2ViewConTroller()
-    let navigation = UINavigationController(rootViewController: MainVc)
-        navigation.modalPresentationStyle = .fullScreen
-        //navigation.isNavigationBarHidden = true
-        present(navigation, animated: true, completion: nil)
-        
+        // cách chuyển cả màn
+        let Main = Main2ViewConTroller()
+        Main.modalPresentationStyle = .fullScreen
+        present(Main, animated: true, completion: nil)
     }
     
     
