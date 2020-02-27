@@ -1,6 +1,6 @@
 ### MÀN 1: MÀN HÌNH CHÍNH
 <img src = "./X - 1.jpg" width="600">
-
+### màn hình 3
 <img src = "./X - 2.jpg" width="600">
 <img src = "./X - 3.jpg" width="600">
 <img src = "./X - 4.jpg" width="600">
