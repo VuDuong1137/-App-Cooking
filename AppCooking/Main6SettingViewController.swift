@@ -114,6 +114,7 @@ class Main6SettingViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "anh1")!)
         Setuplayout()
+        BtnBack.addTarget(self, action: #selector(Dismiss), for: .touchUpInside)
         btn1.addTarget(self, action: #selector(Font), for: .touchUpInside)
         
     }
@@ -196,9 +197,18 @@ class Main6SettingViewController: UIViewController {
     }
     @objc func Font(){
         
+        let uialert: UIAlertController = UIAlertController(title: "Cooking", message: "", preferredStyle: .alert)
+        let butonSmall: UIAlertAction = UIAlertAction(title: "Nhỏ", style: .default, handler: nil)
+        let buttonBig: UIAlertAction = UIAlertAction(title: "Lớn", style: .cancel, handler: nil)
+        uialert.addAction(buttonBig)
+        uialert.addAction(butonSmall)
+    
+        present(uialert, animated: true, completion: nil)
+        
     }
     
-    
-    
+    @objc func Dismiss() {
+        dismiss(animated: true, completion: nil)
+    }
     
 }

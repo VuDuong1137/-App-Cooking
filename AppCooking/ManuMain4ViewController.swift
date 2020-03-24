@@ -13,7 +13,7 @@ class ManuMain4ViewController: UIViewController {
     let View: UIView = {
         let View = UIView()
         View.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width / 1.5, height: UIScreen.main.bounds.height)
-        View.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.3191887842)
+        View.backgroundColor = #colorLiteral(red: 1, green: 0.8578439951, blue: 0.6047694683, alpha: 1)
         
         return View
     }()
