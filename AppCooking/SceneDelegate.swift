@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = WindowScreen
         
-        let maiVC = Main3ViewController()
+        let maiVC = Main2ViewConTroller()
         maiVC.modalPresentationStyle = .fullScreen
 //        let navigation = UINavigationController(rootViewController: maiVC)
 //

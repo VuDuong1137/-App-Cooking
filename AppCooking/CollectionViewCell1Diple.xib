@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell1Diple" customModule="AppCooking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tết Đoan Ngọ" translatesAutoresizingMaskIntoConstraints="NO" id="4mK-c6-6hC">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="215"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tết Đoan Ngọ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9s-2n-0ey">
+                        <rect key="frame" x="0.0" y="174" width="191" height="41"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="191" id="8kC-Z4-VBs"/>
+                            <constraint firstAttribute="height" constant="41" id="bv6-1G-EgV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4mK-c6-6hC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0rd-5B-lcU"/>
+                <constraint firstAttribute="trailing" secondItem="4mK-c6-6hC" secondAttribute="trailing" id="JTI-ac-VVK"/>
+                <constraint firstAttribute="trailing" secondItem="F9s-2n-0ey" secondAttribute="trailing" id="PSi-3z-Uba"/>
+                <constraint firstItem="F9s-2n-0ey" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="174" id="aFk-V7-3j5"/>
+                <constraint firstAttribute="bottom" secondItem="F9s-2n-0ey" secondAttribute="bottom" id="llf-L7-vmf"/>
+                <constraint firstItem="4mK-c6-6hC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oBj-Wh-EJn"/>
+                <constraint firstItem="F9s-2n-0ey" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oGd-dI-89G"/>
+                <constraint firstAttribute="bottom" secondItem="4mK-c6-6hC" secondAttribute="bottom" id="vBA-rA-kjj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="191" height="215"/>
+            <connections>
+                <outlet property="ImageView" destination="4mK-c6-6hC" id="QAf-I2-zaV"/>
+                <outlet property="lblname" destination="F9s-2n-0ey" id="ixv-yP-DFJ"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="89.397321428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Tết Đoan Ngọ" width="500" height="333"/>
+    </resources>
+</document>
